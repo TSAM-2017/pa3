@@ -61,9 +61,9 @@ TODO
 
 -----
 ### Code structure
-It was decided to break the project down in different C files for the simplicity of the development. It was uncertain in the beginning of the implementation on how big the code would end up, and therefor it was decided to break it down into different files for each request, specs and setup. 
+It was decided to break the project down in different C and header files for the simplicity of the development. It was uncertain in the beginning of the implementation on how big the code would end up, and therefor it was decided to break it down into different files for each request, specs and setup. 
 
-A header file http_spec.h was implemented, which contains C function declarations and macro definitions that is shared between several source files. Why macros? Well, the short answer is better performance, it is perprocessed and has less functions. It is of course possible to replace the macros in this project with functions, but functions can sometimes be more expensive as they have to locate space for a parameter, resolve addresses and so on. 
+A header file http_spec.h was created, which contains C function declarations and macro definitions that is shared between several source files. Why macros? Well, the short answer is better performance, it is preprocessed and has less functions. It is of course possible to replace the macros in this project with functions, but functions can sometimes be more expensive as they have to locate space for a parameter, resolve addresses and so on. 
 
 #### File Structure
 - main.c - The input argument and calling the relevant functions
