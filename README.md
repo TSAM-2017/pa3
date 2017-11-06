@@ -13,7 +13,6 @@ how to start server:
 ```
 $ ./httpd <port>
 ```
-all other signatures will cause errors
 
 -----
 ### Requirements
@@ -27,10 +26,12 @@ all other signatures will cause errors
 - Include Makefile that compiles the httpd program.
 
 **2. It must be possible to run the server using the commands:**
-
+```
 [student15@skel pa2]$ make -C ./src
-
+```
+```
 [student15@skel pa2]$ ./src/httpd $port $((port + 1))
+```
    
 **3. Commented code in a meaningful way and use proper indentation.**
 
