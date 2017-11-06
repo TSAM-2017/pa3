@@ -18,7 +18,7 @@ all other signatures will cause errors
 -----
 ### Requirements
 
-**1. (2 points) The hand-in must conform to the following to be graded:**
+**1. The hand-in must conform to the following to be graded:**
 - All necessary files need to be stored in an archive
 - Provide stored passwords in a file
 - You must have the generated keys in the top-level directory.
@@ -26,15 +26,15 @@ all other signatures will cause errors
 - Include ./README file 
 - Include Makefile that compiles the httpd program.
 
-**2. (2 points) It must be possible to run the server using the commands:**
+**2. It must be possible to run the server using the commands:**
 
 [student15@skel pa2]$ make -C ./src
 
 [student15@skel pa2]$ ./src/httpd $port $((port + 1))
    
-**3. (2 points) Commented code in a meaningful way and use proper indentation.**
+**3. Commented code in a meaningful way and use proper indentation.**
 
-**4. (2 points) No crash, no memory leak and no unknown security issues.**
+**4. No crash, no memory leak and no unknown security issues.**
 
 **5. Parse the arguments of the request and call functions to generate different content for each request.**
 - 5.1. Parse the query component of the URI to supply arguments to the function.
