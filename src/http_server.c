@@ -80,7 +80,7 @@ void loop_accepting(HE *server) {
             // if poll return 0 then there was a timeout for the specified ms
             break;
         } else {
-            // No error occurred so continue
+            // No error occurred so we can continue
             for (i = 1; i < nfds; ++i) {
                 // loop through all the active clients
                 if (fds[i].revents == 0) { // if revents = 0 then there were no events for this file descriptor
