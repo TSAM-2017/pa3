@@ -1,9 +1,9 @@
 # Programming Assignment 3 – HTTP server
 
-Team:
-Dagur Arinbjorn Danielsson <dagur13@ru.is>
-Raquelita Ros Aguilar <raquelita15@ru.is>
-Thordis Bakkmann Kristinsdottir <thordis15@ru.is>
+**Team:**
+- Dagur Arinbjorn Danielsson <dagur13@ru.is>
+- Raquelita Ros Aguilar <raquelita15@ru.is>
+- Thordis Bakkmann Kristinsdottir <thordis15@ru.is>
 
 how to build:
 run 'make' within the 'src/' directory
@@ -20,7 +20,7 @@ $ ./httpd <port>
 **1. The hand-in must conform to the following to be graded:**
 - All necessary files need to be stored in an archive
 - Provide stored passwords in a file
-- You must have the generated keys in the top-level directory.
+- Generated keys are in the top-level directory.
 - Include ./AUTHORS file 
 - Include ./README file 
 - Include Makefile that compiles the httpd program.
@@ -63,7 +63,7 @@ TODO
 ### Code structure
 It was decided to break the project down in different C files for the simplicity of the development. It was uncertain in the beginning of the implementation on how big the code would end up, and therefor it was decided to break it down into different files for each request, specs and setup. 
 
-A header file http_spec.h was created that contains C function declarations and macro definitions that is shared between several source files. Why macros? Well the short answer is better performance, it's perprocessed and less functions. It is of course possible to replace the macros in this project with functions, but functions can sometimes be more expensive as they have to locate space for a parameter, resolve addresses and so on. 
+A header file http_spec.h was implemented, which contains C function declarations and macro definitions that is shared between several source files. Why macros? Well, the short answer is better performance, it is perprocessed and has less functions. It is of course possible to replace the macros in this project with functions, but functions can sometimes be more expensive as they have to locate space for a parameter, resolve addresses and so on. 
 
 #### File Structure
 - main.c - The input argument and calling the relevant functions
