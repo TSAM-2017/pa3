@@ -19,6 +19,7 @@ all other signatures will cause errors
 ### Requirements
 
 **1. (2 points) The hand-in must conform to the following to be graded:**
+
 • All necessary files need to be stored in an archive
 • Provide stored passwords in a file
 • You must have the generated keys in the top-level directory.
