@@ -27,6 +27,7 @@ all other signatures will cause errors
 • Include Makefile that compiles the httpd program.
 
 **2. (2 points) It must be possible to run the server using the commands:**
+
 [student15@skel pa2]$ make -C ./src
 [student15@skel pa2]$ ./src/httpd $port $((port + 1))
    
@@ -45,10 +46,14 @@ Parse the header of the requests and make the data relevant to users accessible 
 
 **7. Key management**
 
+To establish any connection via OpenSSL, you need to generate a certificate that is used to establish the connection.
+
 **8. OpenSSL**
+
 TODO
 
 **9. Authentication**
+
 TODO
 
 -----
