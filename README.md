@@ -5,11 +5,12 @@
 - Raquelita Ros Aguilar <raquelita15@ru.is>
 - Thordis Bakkmann Kristinsdottir <thordis15@ru.is>
 
-how to build:
+-----
+How to build:
 run 'make' within the 'src/' directory
 or run 'make -C ./src' within the pa3/ directory
 
-how to start server:
+How to start server:
 ```
 $ ./httpd <port>
 ```
